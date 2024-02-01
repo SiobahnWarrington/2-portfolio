@@ -1,0 +1,41 @@
+:root { /*adding css variables to make website colours easier to control*/
+  --dark: #2c43a1;
+  --light: #e48e8e;
+  --navlink-color: #b9c6ae;
+}
+
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+
+
+    header {
+        display: block;
+        justify-content: left;
+        align-items: center;
+        padding: 10%; /*want nice big header*/
+        background-color: var(--dark);
+        color: var(--light);
+      }
+
+      nav a {
+        background-color: unset;
+        color: var(--navlink-color);
+        font-weight: bold;
+        text-decoration: none;
+      }
+      
+      nav a:hover {
+        color: var(--light);
+      }
+      
