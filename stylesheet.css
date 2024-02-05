@@ -1,10 +1,12 @@
 :root { /*adding css variables to make website colours easier to control*/
-  --dark: #2c43a1;
-  --light: #e48e8e;
+  --dark: rgb(4, 38, 53);
+  --light: #eadff4;
   --navlink-color: #b9c6ae;
 }
 
-
+h1{
+color: rgb(4, 38, 53);
+}
 
 .row {
     display: flex;
@@ -12,30 +14,40 @@
     flex-wrap: wrap;
     }
 
+    
+      header {
 
-    body {
-      font-family: Arial;
-      margin: 0;
-    }
-
-
-    header {
         display: block;
+        background-image: url(./headerPic.jpg);
+        background-repeat:no-repeat;
+        background-position: center center;   
         justify-content: left;
         align-items: center;
         padding: 10%; /*want nice big header*/
         background-color: var(--dark);
-        color: var(--light);
+        color: var(--dark);
       }
 
       nav a {
         background-color: unset;
-        color: var(--navlink-color);
+        color: var(--dark);
         font-weight: bold;
-        text-decoration: none;
+        text-decoration-style: solid;
       }
       
       nav a:hover {
         color: var(--light);
       }
       
+      body {
+        font-family: Arial;
+        margin: 0;
+        
+      }
+
+      .mainBodyStuff{
+        border: 5px dashed; color: var(--light);
+        padding: 20px;
+      }
+
+
